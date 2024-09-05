@@ -32,6 +32,22 @@ public class DataProviders {
 	}
 	
 	//DataProvider 2
+	@DataProvider(name="LoginData1")
+	public Object [][] loginTest() 
+	{
+		Object data [][]= {
+				
+				{"justinsalamon11@gmail.com", "12345", "valid"},
+				{"yamaha@gmail.com", "56789", "invalid"}
+					
+		};
+		
+	return data;
+	
+	}
+
+	
+	
 	
 	//DataProvider 3
 	

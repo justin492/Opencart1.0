@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jul 06 23:00:41 IST 2024</td>
+<td>Started on:</td><td>Sun Jul 28 18:41:32 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>33 seconds (33469 ms)</td>
+<tr><td>Total time:</td><td>116 seconds (116922 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.Tc002_LoginTest.verify_login()'><b>verify_login</b><br>Test class: testcases.Tc002_LoginTest</td>
+<td title='testcases.Tc002_LoginTest.validate_no_of_unsuccesfull_login()'><b>validate_no_of_unsuccesfull_login</b><br>Test class: testcases.Tc002_LoginTest</td>
 <td><div><pre>java.lang.AssertionError: null
-	at testcases.Tc002_LoginTest.verify_login(Tc002_LoginTest.java:35)
+	at testcases.Tc002_LoginTest.validate_no_of_unsuccesfull_login(Tc002_LoginTest.java:267)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace721671471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace721671471'><pre>java.lang.AssertionError: null
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace736951628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace736951628'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.fail(Assert.java:116)
-	at testcases.Tc002_LoginTest.verify_login(Tc002_LoginTest.java:35)
+	at testcases.Tc002_LoginTest.validate_no_of_unsuccesfull_login(Tc002_LoginTest.java:267)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,8 +114,113 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>12</td>
-<td>testcases.Tc002_LoginTest@6c6357f9</td></tr>
+<td>1</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.Validating_copyingofthetext_entered_into_the_Passwordfield()'><b>Validating_copyingofthetext_entered_into_the_Passwordfield</b><br>Test class: testcases.Tc002_LoginTest</td>
+<td><div><pre>java.util.NoSuchElementException: Copy option not found in the context menu.
+	at pageobjects.Loginpage.isCopyOptionEnabled(Loginpage.java:245)
+	at testcases.Tc002_LoginTest.Validating_copyingofthetext_entered_into_the_Passwordfield(Tc002_LoginTest.java:308)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1749250768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1749250768'><pre>java.util.NoSuchElementException: Copy option not found in the context menu.
+	at pageobjects.Loginpage.isCopyOptionEnabled(Loginpage.java:245)
+	at testcases.Tc002_LoginTest.Validating_copyingofthetext_entered_into_the_Passwordfield(Tc002_LoginTest.java:308)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.verify_login()'><b>verify_login</b><br>Test class: testcases.Tc002_LoginTest<br>Parameters: yamaha@gmail.com, yamaha, invalid</td>
+<td></td>
+<td>11</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.validate_usingbrowserbackbutton_Login()'><b>validate_usingbrowserbackbutton_Login</b><br>Test class: testcases.Tc002_LoginTest</td>
+<td></td>
+<td>4</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.verify_login()'><b>verify_login</b><br>Test class: testcases.Tc002_LoginTest<br>Parameters: justinsalamon11@gmail.com, pulsar, invalid</td>
+<td></td>
+<td>16</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.verify_login()'><b>verify_login</b><br>Test class: testcases.Tc002_LoginTest<br>Parameters: justinsalamon11@gmail.com, 12345, valid</td>
+<td></td>
+<td>23</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.verify_login()'><b>verify_login</b><br>Test class: testcases.Tc002_LoginTest<br>Parameters: , , invalid</td>
+<td></td>
+<td>11</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.validate_byPlaceholdertext()'><b>validate_byPlaceholdertext</b><br>Test class: testcases.Tc002_LoginTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.validate_bykeyboardkeys()'><b>validate_bykeyboardkeys</b><br>Test class: testcases.Tc002_LoginTest</td>
+<td></td>
+<td>6</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.CheckForgotpasswordpage()'><b>CheckForgotpasswordpage</b><br>Test class: testcases.Tc002_LoginTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.Validate_PasswordFieldVisibility()'><b>Validate_PasswordFieldVisibility</b><br>Test class: testcases.Tc002_LoginTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.validate_Logoutfunctionality()'><b>validate_Logoutfunctionality</b><br>Test class: testcases.Tc002_LoginTest</td>
+<td></td>
+<td>4</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
+<tr>
+<td title='testcases.Tc002_LoginTest.verify_login()'><b>verify_login</b><br>Test class: testcases.Tc002_LoginTest<br>Parameters: duke@gmail.com, 12345, invalid</td>
+<td></td>
+<td>11</td>
+<td>testcases.Tc002_LoginTest@71104a4</td></tr>
 </table><p>
 </body>
 </html>

@@ -48,4 +48,16 @@ public class MyaccountPage extends Basepage1{
 		js.executeScript("arguments[0].click();",lnkLogout);
 		//lnkLogout.click();
 	}
+	
+	public void navigateback()
+	{
+		driver.navigate().back();
+		
+	}
+	
+	public void Pagerefresher()
+	{
+		driver.navigate().refresh();
+		
+	}
 }

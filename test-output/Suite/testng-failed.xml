@@ -10,9 +10,9 @@
     <classes>
       <class name="testcases.Tc002_LoginTest">
         <methods>
-          <include name="verify_login"/>
-          <include name="teardown"/>
+          <include name="validate_no_of_unsuccesfull_login"/>
           <include name="setup"/>
+          <include name="Validating_copyingofthetext_entered_into_the_Passwordfield"/>
         </methods>
       </class> <!-- testcases.Tc002_LoginTest -->
     </classes>

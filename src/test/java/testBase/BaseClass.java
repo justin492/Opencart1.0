@@ -22,10 +22,14 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
+import pageobjects.Loginpage;
 
 public class BaseClass {
 	public static WebDriver driver;
+	public Loginpage lp;
 	public Logger logger; //log4j
 	public Properties p;
 	@BeforeClass(groups={"Sanity","Regression", "Master", "Datadriven"})
@@ -90,10 +94,11 @@ public class BaseClass {
 		Thread.sleep(5000);
 	
 	}
-	@AfterClass(groups={"Sanity","Regression", "Master", "Datadriven"})
-	public void teardown() {
-		driver.quit();
-	}
+	
+	//@AfterClass(groups={"Sanity","Regression", "Master", "Datadriven"})
+	//public void teardown() {
+	//	driver.quit();
+	//}
 	public String randomstring()
 	{
 		
