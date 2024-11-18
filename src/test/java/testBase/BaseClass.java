@@ -16,6 +16,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -47,9 +48,9 @@ public class BaseClass {
 			DesiredCapabilities capabilities=new DesiredCapabilities();
 			
 			//os
-			if(os.equalsIgnoreCase("windows"))
+			if(os.equalsIgnoreCase("Linux"))
 			{
-			capabilities.setPlatform(Platform.WIN10);
+			capabilities.setPlatform(Platform.LINUX);
 			}
 			else if(os.equalsIgnoreCase("mac"))
 			{
@@ -77,7 +78,11 @@ public class BaseClass {
 		{
 		switch(br.toLowerCase())
 		 {
-		case "chrome" :driver=new ChromeDriver(); break;
+		
+		case "chrome" :
+			ChromeOptions chromeOptions = new ChromeOptions();
+        	chromeOptions.addArguments("--headless=new");
+			driver=new ChromeDriver(chromeOptions); break;
 		case "edge"	  :driver=new EdgeDriver(); break;
 		case "firefox" :driver=new FirefoxDriver(); break;
 		default :System.out.println("invalid browser name"); return;

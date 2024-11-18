@@ -6,7 +6,7 @@
 	</listeners>
 	
   <test  name="chrometest">
-	  <parameter name="os" value="windows"/>
+	  <parameter name="os" value="Linux"/>
 	  <parameter name="browser" value="chrome"/>
 	 
     <classes>
@@ -14,7 +14,7 @@
     </classes>
   </test> <!-- Test -->
   <test  name="edgetest">
-  <parameter name="os" value="windows"/>
+  <parameter name="os" value="Linux"/>
 	  <parameter name="browser" value="edge"/>
 	 
     <classes>
